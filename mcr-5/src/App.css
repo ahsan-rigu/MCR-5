@@ -1,0 +1,173 @@
+*{
+  box-sizing: border-box;
+}
+
+.card{
+  width: min(100vw, 20rem);
+  background-color: aliceblue;
+  border-radius: 1rem;
+  border: 1px solid rgb(134, 134, 134);
+  height: fit-content;
+  position: relative;
+}
+
+.card .link{
+  border: none;
+  text-decoration: none;
+  padding: .5rem;
+  border: 1px solid rgb(134, 134, 134);
+  background-color: transparent;
+  margin-bottom: 1rem;
+  width: calc(100% - 1rem);
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+h2{
+  text-align: left;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  max-width: 80%;
+}
+
+.btns-tr{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.modal{
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 1rem;
+  position: fixed;
+  width: min(100vw, 20rem);
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 999;
+}
+
+.modal>form *{
+  text-align: left;
+  width: min(95vw, 19rem);
+}
+
+textarea {
+  height: 10rem;
+}
+
+.flex-page{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  justify-content: center;
+  margin-top: 4rem;
+  border: 1px solid rgb(182, 182, 182);
+}
+
+.flex-page a{
+  position: fixed;
+  top: 1rem;
+  left: 2rem;
+}
+
+
+.flex-page>*{
+  width: 20rem;
+}
+
+.flex-page div h2{
+  text-align: center;
+}
+
+.create-btn{
+  cursor: pointer;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  border: none;
+  background-color: transparent;
+}
+
+form button{
+  margin-block: .5rem;
+  padding: .25rem;
+  text-align: center;
+}
+
+p{
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.card button{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+img{
+  max-width: 100%;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.recipie-container{
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+  width: 100vw;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
