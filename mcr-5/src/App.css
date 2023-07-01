@@ -11,6 +11,29 @@
   position: relative;
 }
 
+header{
+  padding: 1rem;
+  border-bottom: 1px solid rgb(160, 160, 160);
+}
+
+header input{
+  width: 12.5rem;
+  padding: .5rem;
+  border-right: none;
+  border-top: 1px solid rgb(160, 160, 160);
+  border-left: 1px solid rgb(160, 160, 160);
+  border-bottom: 1px solid rgb(160, 160, 160);
+}
+
+header select{
+
+  padding: .45rem;
+  border-right: none;
+  border-top: 1px solid rgb(160, 160, 160);
+  border-right: 1px solid rgb(160, 160, 160);
+  border-bottom: 1px solid rgb(160, 160, 160);
+}
+
 .card .link{
   border: none;
   text-decoration: none;
@@ -78,7 +101,20 @@ textarea {
 }
 
 .flex-page div h2{
-  text-align: center;
+  text-align: center !important;
+  margin-inline: 0;
+  max-width: 100%;
+}
+.flex-page div h2:first-child{
+  border-bottom: 1px solid rgb(185, 185, 185);
+  padding-bottom: 1rem;
+}
+
+
+.flex-page div{
+  border-left: 1px solid rgb(185, 185, 185);
+  border-right: 1px solid rgb(185, 185, 185);
+  padding: .5rem;
 }
 
 .create-btn{

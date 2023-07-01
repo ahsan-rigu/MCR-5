@@ -64,6 +64,7 @@ const AddEdit = ({ recipieToEdit, closeModal }) => {
             type="text"
             placeholder="name"
             value={name}
+            required
             onChange={(e) => setName(e.target.value)}
           />
         </label>
@@ -73,6 +74,7 @@ const AddEdit = ({ recipieToEdit, closeModal }) => {
             type="text"
             placeholder="cuisine"
             value={cuisine}
+            required
             onChange={(e) => setCuisine(e.target.value)}
           />
         </label>
@@ -81,6 +83,7 @@ const AddEdit = ({ recipieToEdit, closeModal }) => {
           <textarea
             placeholder="Type instructions, each step seperated by a comma"
             value={ingredients}
+            required
             onChange={(e) => setIngredients(e.target.value)}
           ></textarea>
         </label>
@@ -89,6 +92,7 @@ const AddEdit = ({ recipieToEdit, closeModal }) => {
           <textarea
             placeholder="Type instructions, each step seperated by a comma"
             value={instructions}
+            required
             onChange={(e) => setInstructions(e.target.value)}
           ></textarea>
         </label>
@@ -98,6 +102,7 @@ const AddEdit = ({ recipieToEdit, closeModal }) => {
             type="text"
             placeholder="img url"
             value={img}
+            required
             onChange={(e) => setImg(e.target.value)}
           />
         </label>

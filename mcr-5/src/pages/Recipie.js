@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link, useParams } from "react-router-dom";
 import { DataContext } from "../contexts/DataContext";
+import { BiArrowBack } from "react-icons/bi";
 
 const Recipie = () => {
   const { key } = useParams();
@@ -11,7 +12,9 @@ const Recipie = () => {
 
   return (
     <div className="flex-page">
-      <Link to={"/"}>GO BACK</Link>
+      <Link to={"/"}>
+        <BiArrowBack size={"3rem"} />
+      </Link>
       <div>
         <h2>{recipie.name}</h2>
         <img src={recipie.img} />
